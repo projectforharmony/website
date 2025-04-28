@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Harmony - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&family=MonteCarlo&family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <aside class="sidebar">
+        <nav class="nav-buttons">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="content-wrapper">
+        <header class="page-header">
+            <h2>About Us</h2>
+        </header>
+
+        <main class="main-content">
+            <section class="mission-section">
+                <h2>Mission Statement</h2>
+                <div class="mission-container">
+                    <p>At Project Harmony, our mission is to empower and support communities in India by providing essential resources to those in need. While we may be physically distant, we are committed to facilitating meaningful change by connecting individuals in the United States with opportunities to fund critical projects and initiatives. By channeling financial resources into local efforts, we aim to break down barriers for the elderly, parents, children, and animals, ultimately fostering sustainable growth and improving lives in underserved areas of India. Together, we can create a lasting impact— <strong>funding one initiative at a time</strong>.</p>
+                </div>
+            </section>
+
+            <section class="goals-section">
+                <h2>What do we do?</h2>
+                <div class="goals-table">
+                    <div class="goal-row">
+                        <div class="goal-title">Primary Goal</div>
+                        <div class="goal-description">Pool funding from individuals in the U.S. and divide funding appropriately to small initiatives that have small social reach/based in rural areas to support long-term.</div>
+                    </div>
+                    <div class="goal-row">
+                        <div class="goal-title">Secondary Goal</div>
+                        <div class="goal-description">At Project Harmony, we aim to go beyond funding by fostering long-term engagement, like virtual pen pal programs to connect volunteers with elders seeking companionship.</div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="call-to-action-section">
+                <h2>Call to Action:</h2>
+                <div class="cta-container">
+                    <p class="cta-text">We would love to host a fundraiser at Desi District for Serve Needy via our GoFundMe campaign. For now, we kindly ask if we could display our flyers near the cash register and throughout the restaurant to help spread the word.</p>
+                    
+                    <p class="cta-text">Our goal is to build a long-term partnership with Desi District, hosting future fundraisers that not only contribute to the community image of the restaurant but also support the people of India. Together, we can make a lasting impact and strengthen Desi District's connection with both local and global causes.</p>
+                    
+                    <p class="cta-text">We have included with this overview the official brochure of Serve Needy's Projects and the sample flyer we wish to display. We look forward to hearing your decision!</p>
+                </div>
+            </section>
+    
+            <section class="contact-section">
+                <h2>Contact:</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> Projectforharmony@gmail.com</p>
+                        <p><strong>Phone:</strong> +1 (972) 292-0732</p>
+                    </div>
+                    <div class="social-media">
+                        <div class="social-item">
+                            <img src="images/instagram_icon.png" alt="Instagram" class="social-icon">
+                            <p>@_projectharmony</p>
+                        </div>
+                        <div class="social-item">
+                            <img src="images/facebook-icon.jpeg" alt="Facebook" class="social-icon">
+                            <p>Project Harmony - Facebook Group<br>(https://www.facebook.com/share/g/152sJq7AUN/)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            mainContent.classList.toggle('shifted');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
